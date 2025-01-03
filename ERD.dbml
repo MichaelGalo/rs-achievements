@@ -3,6 +3,13 @@ Table user {
   username varchar(255) [not null, unique]
 }
 
+Table party_hat {
+  id int [pk, increment]
+  user_id int [ref: > user.id]
+  current_gp_saved int [not null, default: 0]
+  obtained boolean [not null, default: false]
+}
+
 Table skills {
   id int [pk, increment]
   name varchar(255) [not null]
