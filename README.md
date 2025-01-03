@@ -1,36 +1,17 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Purpose
 
-## Getting Started
+This is a personal project of mine, where I intend on practicing data analytics and visualization with a game that I've enjoyed for years: Runescape. There are many long grinds & soul-crushing achievement lengths, which is why I've decided to visualize my progress for my main account.
 
-First, run the development server:
+## Public URL
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Currently this site is under development and isn't publicly available. When it releases, the URL link will be placed here.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Want your own?
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Currently this isn't easily done, but soon I hope to give a thorough walk-through on how to input your own data points in order to make this possible. It will require some basic understanding on cloning a repo & inputting data into the .json files. All in all, it will be simple - though a bit scary for muggles that have never used a terminal.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## For Curious Devs
 
-## Learn More
+I'm intentionally not creating a back-end (what would have been likely a django/python API), primarily due to hosting cost concerns. I'd like to practice CI/CD via GitHub Actions, which I've used seldomly to serve static sites.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Also with the (soon tm) release of the RuneScape API, I thought it might be easier to focus on the front-end and hopefully connect fetch calls to their API for dynamically rendered data vs. static data in the future.
