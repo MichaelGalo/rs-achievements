@@ -1,0 +1,42 @@
+Table user {
+  id int [pk, increment]
+  username varchar(255) [not null, unique]
+}
+
+Table skills {
+  id int [pk, increment]
+  name varchar(255) [not null]
+  user_id int [ref: > user.id]
+  level int [not null, default: 1]
+  experience int [not null, default: 0]
+  99 boolean [not null, default: false]
+  120 boolean [not null, default: false]
+  200m boolean [not null, default: false]
+}
+
+Table boss_logs {
+  id int [pk, increment]
+  user_id int [ref: > user.id]
+  boss_name varchar(255) [not null]
+  kill_count int [not null, default: 0]
+}
+
+Table boss_uniques {
+  id int [pk, increment]
+  boss_log_id int [ref: > boss_logs.id]
+  unique_name varchar(255) [not null]
+  obtained boolean [not null, default: false]
+}
+
+Table slayer_logs {
+  id int [pk, increment]
+  user_id int [ref: > user.id]
+  slayer_log_name varchar(255) [not null]
+}
+
+Table slayer_uniques {
+  id int [pk, increment]
+  slayer_log_id int [ref: > slayer_logs.id]
+  unique_name varchar(255) [not null]
+  obtained boolean [not null, default: false]
+}
